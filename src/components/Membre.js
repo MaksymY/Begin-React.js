@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react'
 
-const Membre = ({nom, children, age}) => {
+const Membre = ({nom, children, age, hideName}) => {
     return(
         <Fragment>
         <h2 style={{ 
@@ -8,6 +8,7 @@ const Membre = ({nom, children, age}) => {
             color: age < 10 ? 'black' : 'white' }}> 
             Membre de la famille:{nom.toUpperCase()}: {age}
         </h2>
+        <button onClick={hideName}>Anonyme</button>
         { children ? <p>{children}</p>: <Fragment/>}
         
         </Fragment>
