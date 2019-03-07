@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react'
+import './Membre.css'
 
 const Membre = ({nom, children, age, hideName}) => {
     return(

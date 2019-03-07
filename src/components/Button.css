@@ -1,3 +1,6 @@
+.Button {
+    text-align: center;
+}
 button {
     margin-top: 5px;
     background-color: gold;
